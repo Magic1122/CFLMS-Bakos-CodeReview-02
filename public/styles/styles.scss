@@ -1,0 +1,171 @@
+// Colors
+
+$dark-red: #5a181a;
+$white: #fff;
+$black: #1a1a1a;
+$light-grey: #dddddd;
+$dark-grey: #515151;
+
+$grey: #666;
+$blue: #4285f4;
+$dark-blue: #364051;
+$off-white: #f7f7f7;
+
+// Font sizes
+
+$font-size-small: 1.4rem;
+$font-size-large: 1.8rem;
+
+// Spacing
+
+$s-size: 1.4rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+main {
+  margin: 0 $s-size;
+}
+
+.main-header {
+  width: 100%;
+  background: $dark-red;
+  padding: $s-size;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    margin: 0 $s-size;
+  }
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  background: $black;
+  list-style: none;
+  display: flex;
+
+  .main-nav__item {
+    margin: 0 $s-size;
+    padding: $s-size/2 0;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      font-weight: bold;
+      padding: 0.2rem 0;
+    }
+  }
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+
+  p {
+    color: $dark-grey;
+    font-size: $font-size-small;
+  }
+}
+
+.top-news-container {
+  display: flex;
+  color: $dark-grey;
+  background-color: $light-grey;
+  font-weight: bold;
+
+  p {
+    margin: 0 0 0 $s-size/2;
+  }
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+.main-content__left-side {
+  flex-basis: 90%;
+}
+
+.main-content__right-side {
+  flex-basis: 10%;
+}
+
+.main-content__left-side-row {
+  display: flex;
+  flex-wrap: nowrap;
+
+  figure {
+    position: relative;
+    margin: $s-size $m-size $s-size 0;
+    width: 100%;
+  }
+}
+
+.main-content__small-pic {
+  max-width: 100%;
+  /* object-fit: fill; */
+}
+
+.main-content__small-pic__description {
+  position: absolute;
+  color: $white;
+  font-size: $font-size-large;
+  background-color: rgba($color: $black, $alpha: 0.99);
+  margin: 0;
+  width: 100%;
+  padding: $m-size;
+  bottom: 0.7rem;
+  height: 25%;
+  left: 0;
+}
+
+.main-content__left-side-row__popular {
+    @extend .top-news-container;
+    margin-right: $m-size;
+}
+
+.main-content__right-side {
+    margin: $s-size 0 2.1rem 0;
+}
+
+.main-content__right-side__link {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    img {
+        width: 100%;
+    }
+}
+
+.main-content__middle__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+    }
+}
