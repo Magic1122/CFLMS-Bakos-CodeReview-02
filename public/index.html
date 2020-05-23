@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
   <title>CodeReview 2</title>
 </head>
 
@@ -15,7 +15,7 @@
         <img src="./img/logo-newspaper-cf.png" alt="newspaper CF - Your favorite news portal" />
       </a>
     </div>
-    <div>
+    <div class="main-header__banner">
       <a href="https://codefactory.wien/en/home-en/" target="_blank" class="main-header__logo">
         <img src="./img/banner-1.png" alt="CodeFactory FSWD course - The best course in Vienna" />
       </a>
@@ -47,7 +47,8 @@
     <div class="main-content">
       <div class="main-content__left-side">
         <div class="main-content__left-side-row">
-          <figure>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/nasa.png" alt="Nasa space station leak" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -56,7 +57,9 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/eu.png" alt="EU approves link tax" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -65,7 +68,9 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/jeff.png" alt="Jeff Bezos creates schools" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -74,12 +79,20 @@
               </p>
             </figcaption>
           </figure>
+          </a>
+          <a class="main-content__left-side-row__link" id="main-content__figure-hiddden" href="https://codefactory.wien/en/home-en/">
+          <figure>
+            <img class="main-content__small-pic" src="./img/banner-mobile-fswd.png" alt="Full Stack logo" />
+          </figure>
+          </a>
+          
         </div>
-        <div class="main-content__left-side-row main-content__left-side-row__popular">
+        <div class="main-content__left-side-row main-content__left-side-row__popular" id="popular">
           <p>Popular</p>
         </div>
         <div class="main-content__left-side-row">
-          <figure>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/polar.png" alt="Newness from Polar" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -88,7 +101,9 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/musk.jpg" alt="Elon Musk is himself again" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -96,7 +111,9 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__small-pic" src="./img/snowden.jpg" alt="Edward Snowden surveillance" />
             <figcaption>
               <p class="main-content__small-pic__description">
@@ -104,6 +121,17 @@
               </p>
             </figcaption>
           </figure>
+          </a>
+          <a class="main-content__left-side-row__link" id="hidden-iphone__mobile" href="article.html">
+            <figure>
+            <img class="main-content__big-pic" src="./img/iphone.png" alt="new iPhones preorder" />
+            <figcaption>
+              <p class="main-content__big-pic__description">
+                How to preorder the iPhone XS, XS Max and XR
+              </p>
+            </figcaption>
+          </figure>
+          </a>
         </div>
       </div>
       <div class="main-content__right-side">
@@ -118,10 +146,11 @@
         <img src="./img/banner-3.png" alt="How to become a developer?" />
       </a>
     </div>
-    <div class="main-content">
+    <div class="main-content main-content__second">
       <div class="main-content__left-side">
         <div class="main-content__left-side-row">
-          <figure>
+          <a class="main-content__left-side-row__link" id="hidden-iphone__desktop" href="article.html">
+            <figure>
             <img class="main-content__big-pic" src="./img/iphone.png" alt="new iPhones preorder" />
             <figcaption>
               <p class="main-content__big-pic__description">
@@ -129,17 +158,19 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__big-pic" src="./img/smart.png" alt="Smart polar strip" />
             <figcaption>
               <p class="main-content__big-pic__description">
-                This smart polar strip lets you individually control each outlet
+                This smart power strip lets you individually control each outlet
               </p>
             </figcaption>
           </figure>
-        </div>
-        <div class="main-content__left-side-row">
-          <figure>
+          </a>
+          <a class="main-content__left-side-row__link" id="desktop-hidden" href="article.html">
+            <figure>
             <img class="main-content__big-pic" src="./img/one.png" alt="OnePlus USB-C earbuds" />
             <figcaption>
               <p class="main-content__big-pic__description">
@@ -147,7 +178,22 @@
               </p>
             </figcaption>
           </figure>
-          <figure>
+          </a>
+          
+        </div>
+        <div class="main-content__left-side-row align-left">
+          <a class="main-content__left-side-row__link" id="mobile-hidden" href="article.html">
+            <figure>
+            <img class="main-content__big-pic" src="./img/one.png" alt="OnePlus USB-C earbuds" />
+            <figcaption>
+              <p class="main-content__big-pic__description">
+                OnePlus announces super cheap USB-C earbuds
+              </p>
+            </figcaption>
+          </figure>
+          </a>
+          <a class="main-content__left-side-row__link" href="article.html">
+            <figure>
             <img class="main-content__big-pic" src="./img/phone.png" alt="Spotify raises limit" />
             <figcaption>
               <p class="main-content__big-pic__description">
@@ -155,6 +201,8 @@
               </p>
             </figcaption>
           </figure>
+          </a>
+          
         </div>
       </div>
       <div class="main-content__right-side">
@@ -182,7 +230,9 @@
       </ul>
     </nav>
     <div class="main-footer-logo">
-      <img src="./img/logo-newspaper-cf.png" alt="newspaper CF - Your favorite news portal">
+      <a href="index.html">
+        <img src="./img/logo-newspaper-cf.png" alt="newspaper CF - Your favorite news portal">
+      </a>
     </div>
     <div class="main-footer-credits">
       <p>Balint Bakos - CodeFactory 2020</p>

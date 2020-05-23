@@ -36,6 +36,7 @@ main {
     .main-nav__items .main-nav__item a, .main-foooter-nav__items .main-nav__item a, .main-nav__items .main-foooter-nav__item a, .main-foooter-nav__items .main-foooter-nav__item a {
       text-decoration: none;
       color: #fff;
+      font-size: 1.8rem;
       font-weight: bold;
       padding: 0.2rem 0; }
 
@@ -46,17 +47,55 @@ main {
     color: #515151;
     font-size: 1.4rem; }
 
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  font-size: 1.8rem; }
+
+.main-footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.4rem; }
+
+.main-footer-credits {
+  display: flex;
+  justify-content: center; }
+  .main-footer-credits p {
+    color: #fff; }
+
+@media (max-width: 480px) {
+  main {
+    margin: 0 0 0 1.4rem; }
+
+  .main-header img {
+    display: block; }
+
+  .main-header__banner {
+    display: none; }
+
+  .main-nav__items, .main-foooter-nav__items,
+  .main-foooter-nav__items,
+  .main-footer-logo {
+    justify-content: center; }
+
+  .time {
+    display: none; }
+
+  .main-footer {
+    margin-top: 3.2rem; } }
+.main-content {
+  display: flex;
+  width: 100%; }
+
 .top-news-container, .main-content__left-side-row__popular {
   display: flex;
   color: #515151;
   background-color: #dddddd;
+  font-size: 2.7rem;
   font-weight: bold; }
   .top-news-container p, .main-content__left-side-row__popular p {
     margin: 0 0 0 0.7rem; }
-
-.main-content {
-  display: flex;
-  width: 100%; }
 
 .main-content__left-side {
   flex-basis: 90%; }
@@ -67,16 +106,18 @@ main {
 .main-content__left-side-row {
   display: flex;
   flex-wrap: nowrap; }
-  .main-content__left-side-row figure {
-    position: relative;
+  .main-content__left-side-row a {
+    width: 100%;
     margin: 1.4rem 1.6rem 1.4rem 0;
-    width: 100%; }
+    display: flex; }
+  .main-content__left-side-row figure {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0; }
 
 .main-content__small-pic, .main-content__big-pic {
   max-width: 100%;
-  /* object-fit: fill; */ }
-
-.main-content__big-pic {
   width: 100%; }
 
 .main-content__small-pic__description, .main-content__big-pic__description {
@@ -115,20 +156,77 @@ main {
   .main-content__middle__link img {
     width: 50%; }
 
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #1a1a1a; }
+#main-content__figure-hiddden {
+  display: none; }
 
-.main-footer-logo {
-  display: flex;
-  justify-content: flex-end;
-  margin: 1.4rem; }
+#hidden-iphone__mobile {
+  display: none; }
 
-.main-footer-credits {
-  display: flex;
-  justify-content: center; }
-  .main-footer-credits p {
-    color: #fff; }
+#desktop-hidden {
+  display: none; }
 
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 480px) {
+  .main-content__middle {
+    display: none; }
+
+  .main-content__right-side {
+    display: none; }
+
+  .main-content__left-side {
+    flex-basis: 100%; }
+
+  #main-content__figure-hiddden {
+    display: inline-block; }
+
+  #hidden-iphone__mobile {
+    display: inline-block; }
+
+  #desktop-hidden {
+    display: inline-block; }
+
+  .main-content__left-side-row {
+    display: inline-block;
+    text-align: right; }
+    .main-content__left-side-row figure {
+      height: 100%;
+      overflow: hidden; }
+
+  .main-content__left-side-row a {
+    display: inline-block;
+    width: 48%;
+    margin: 0; }
+    .main-content__left-side-row a img {
+      max-width: 100%;
+      height: 12rem;
+      display: inline-table;
+      overflow: hidden; }
+    .main-content__left-side-row a p {
+      text-align: left;
+      font-size: 0.8rem;
+      padding: 0; }
+
+  #hidden-iphone__desktop,
+  #mobile-hidden {
+    display: none; }
+
+  .align-left {
+    text-align: left;
+    margin-left: 0.9rem; }
+
+  /* .main-content__second {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+  #popular,
+  .top-news-container,
+  .main-content__left-side-row__popular {
+    font-size: 1.8rem;
+    margin: 1.4rem 0; }
+
+  #popular {
+    display: flex;
+    color: #515151;
+    background-color: #dddddd;
+    font-weight: bold; } }
+
+/*# sourceMappingURL=index.css.map */
