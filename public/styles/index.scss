@@ -195,3 +195,16 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 1800px) {
+  .main-content__right-side {
+    display: none;
+  }
+
+  .main-content__left-side {
+    flex-basis: 100%;
+  }
+
+  .main-content__small-pic__description--tablet-size {
+    font-size: 1.2vw;
+  }
+}
