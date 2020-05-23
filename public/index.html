@@ -1,243 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>CodeReview 2</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/index.css" />
-  <title>CodeReview 2</title>
-</head>
-
-<body>
-  <header class="main-header">
-    <div>
-      <a href="index.html" class="main-header__logo">
-        <img src="./img/logo-newspaper-cf.png" alt="newspaper CF - Your favorite news portal" />
-      </a>
-    </div>
-    <div class="main-header__banner">
-      <a href="https://codefactory.wien/en/home-en/" target="_blank" class="main-header__logo">
-        <img src="./img/banner-1.png" alt="CodeFactory FSWD course - The best course in Vienna" />
-      </a>
-    </div>
-  </header>
-  <nav class="main-nav">
-    <ul class="main-nav__items">
-      <li class="main-nav__item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#">Tech</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#">Culture</a>
-      </li>
-      <li class="main-nav__item">
-        <a href="#">Video</a>
-      </li>
-    </ul>
-  </nav>
-  <main class="content">
-    <div class="time">
-      <p>Friday, 14.09.2018</p>
-    </div>
-    <div class="top-news-container">
-      <p>Top news</p>
-    </div>
-    <div class="main-content">
-      <div class="main-content__left-side">
-        <div class="main-content__left-side-row">
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/nasa.png" alt="Nasa space station leak" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                NASA is trying to squash conspiracy theories about the space
-                station leak
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/eu.png" alt="EU approves link tax" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                EU approves controversial Copyright Directive, including
-                internet 'link tax'
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/jeff.png" alt="Jeff Bezos creates schools" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                Jeff Bezos is going to create schools where 'the child is the
-                customer'
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" id="main-content__figure-hiddden" href="https://codefactory.wien/en/home-en/">
-          <figure>
-            <img class="main-content__small-pic" src="./img/banner-mobile-fswd.png" alt="Full Stack logo" />
-          </figure>
-          </a>
-          
-        </div>
-        <div class="main-content__left-side-row main-content__left-side-row__popular" id="popular">
-          <p>Popular</p>
-        </div>
-        <div class="main-content__left-side-row">
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/polar.png" alt="Newness from Polar" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                Polar's new fitness watch will measure the wattage of your
-                exercise
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/musk.jpg" alt="Elon Musk is himself again" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                Elon Musk smokes marijuana live on web show
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__small-pic" src="./img/snowden.jpg" alt="Edward Snowden surveillance" />
-            <figcaption>
-              <p class="main-content__small-pic__description">
-                Edward Snowden surveillance powers ruled unlawful
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" id="hidden-iphone__mobile" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/iphone.png" alt="new iPhones preorder" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                How to preorder the iPhone XS, XS Max and XR
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-        </div>
-      </div>
-      <div class="main-content__right-side">
-        <a class="main-content__right-side__link" href="https://codefactory.wien/en/home-en/" target="_blank">
-          <img src="./img/banner-2.png" alt="FSWD Banner" />
-        </a>
-
-      </div>
-    </div>
-    <div class="main-content__middle">
-      <a class="main-content__middle__link" href="https://codefactory.wien/en/home-en/" target="_blank">
-        <img src="./img/banner-3.png" alt="How to become a developer?" />
-      </a>
-    </div>
-    <div class="main-content main-content__second">
-      <div class="main-content__left-side">
-        <div class="main-content__left-side-row">
-          <a class="main-content__left-side-row__link" id="hidden-iphone__desktop" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/iphone.png" alt="new iPhones preorder" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                How to preorder the iPhone XS, XS Max and XR
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/smart.png" alt="Smart polar strip" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                This smart power strip lets you individually control each outlet
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" id="desktop-hidden" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/one.png" alt="OnePlus USB-C earbuds" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                OnePlus announces super cheap USB-C earbuds
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          
-        </div>
-        <div class="main-content__left-side-row align-left">
-          <a class="main-content__left-side-row__link" id="mobile-hidden" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/one.png" alt="OnePlus USB-C earbuds" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                OnePlus announces super cheap USB-C earbuds
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          <a class="main-content__left-side-row__link" href="article.html">
-            <figure>
-            <img class="main-content__big-pic" src="./img/phone.png" alt="Spotify raises limit" />
-            <figcaption>
-              <p class="main-content__big-pic__description">
-                Spotify raises limit for offline downloads to 10,000 songs per device
-              </p>
-            </figcaption>
-          </figure>
-          </a>
-          
-        </div>
-      </div>
-      <div class="main-content__right-side">
-        <a class="main-content__right-side__link" href="https://codefactory.wien/en/home-en/" target="_blank">
-          <img src="./img/banner-4.png" alt="FSWD Banner" />
+  <body>
+    <header class="main-header">
+      <div>
+        <a href="index.html" class="main-header__logo">
+          <img
+            src="./img/logo-newspaper-cf.png"
+            alt="newspaper CF - Your favorite news portal"
+          />
         </a>
       </div>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <nav class="main-foooter-nav">
-      <ul class="main-foooter-nav__items">
-        <li class="main-foooter-nav__item">
+      <div class="main-header__banner">
+        <a
+          href="https://codefactory.wien/en/home-en/"
+          target="_blank"
+          class="main-header__logo"
+        >
+          <img
+            src="./img/banner-1.png"
+            alt="CodeFactory FSWD course - The best course in Vienna"
+          />
+        </a>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
           <a href="index.html">Home</a>
         </li>
-        <li class="main-foooter-nav__item">
-          <a href="#">Tech</a>
+        <li class="main-nav__item">
+          <a href="tech.html">Tech</a>
         </li>
-        <li class="main-foooter-nav__item">
-          <a href="#">Culture</a>
+        <li class="main-nav__item">
+          <a href="culture.html">Culture</a>
         </li>
-        <li class="main-foooter-nav__item">
-          <a href="#">Video</a>
+        <li class="main-nav__item">
+          <a href="video.html">Video</a>
         </li>
       </ul>
     </nav>
-    <div class="main-footer-logo">
-      <a href="index.html">
-        <img src="./img/logo-newspaper-cf.png" alt="newspaper CF - Your favorite news portal">
-      </a>
-    </div>
-    <div class="main-footer-credits">
-      <p>Balint Bakos - CodeFactory 2020</p>
-    </div>
-  </footer>
-</body>
-
+    <main class="content">
+      <div class="time">
+        <p>Friday, 14.09.2018</p>
+      </div>
+      <div class="top-news-container">
+        <p>Top news</p>
+      </div>
+      <div class="main-content">
+        <div class="main-content__left-side">
+          <div class="main-content__left-side-row">
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/nasa.png"
+                  alt="Nasa space station leak"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    NASA is trying to squash conspiracy theories about the space
+                    station leak
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/eu.png"
+                  alt="EU approves link tax"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    EU approves controversial Copyright Directive, including
+                    internet 'link tax'
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/jeff.png"
+                  alt="Jeff Bezos creates schools"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    Jeff Bezos is going to create schools where 'the child is
+                    the customer'
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="main-content__left-side-row__link"
+              id="main-content__figure-hiddden"
+              href="https://codefactory.wien/en/home-en/"
+            >
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/banner-mobile-fswd.png"
+                  alt="Full Stack logo"
+                />
+              </figure>
+            </a>
+          </div>
+          <div
+            class="main-content__left-side-row main-content__left-side-row__popular"
+            id="popular"
+          >
+            <p>Popular</p>
+          </div>
+          <div class="main-content__left-side-row">
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/polar.png"
+                  alt="Newness from Polar"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    Polar's new fitness watch will measure the wattage of your
+                    exercise
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/musk.jpg"
+                  alt="Elon Musk is himself again"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    Elon Musk smokes marijuana live on web show
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__small-pic"
+                  src="./img/snowden.jpg"
+                  alt="Edward Snowden surveillance"
+                />
+                <figcaption>
+                  <p
+                    class="main-content__small-pic__description main-content__small-pic__description--tablet-size"
+                  >
+                    Edward Snowden surveillance powers ruled unlawful
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="main-content__left-side-row__link"
+              id="hidden-iphone__mobile"
+              href="article.html"
+            >
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/iphone.png"
+                  alt="new iPhones preorder"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    How to preorder the iPhone XS, XS Max and XR
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="main-content__right-side">
+          <a
+            class="main-content__right-side__link"
+            href="https://codefactory.wien/en/home-en/"
+            target="_blank"
+          >
+            <img src="./img/banner-2.png" alt="FSWD Banner" />
+          </a>
+        </div>
+      </div>
+      <div class="main-content__middle">
+        <a
+          class="main-content__middle__link"
+          href="https://codefactory.wien/en/home-en/"
+          target="_blank"
+        >
+          <img src="./img/banner-3.png" alt="How to become a developer?" />
+        </a>
+      </div>
+      <div class="main-content main-content__second">
+        <div class="main-content__left-side">
+          <div class="main-content__left-side-row">
+            <a
+              class="main-content__left-side-row__link"
+              id="hidden-iphone__desktop"
+              href="article.html"
+            >
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/iphone.png"
+                  alt="new iPhones preorder"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    How to preorder the iPhone XS, XS Max and XR
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/smart.png"
+                  alt="Smart polar strip"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    This smart power strip lets you individually control each
+                    outlet
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a
+              class="main-content__left-side-row__link"
+              id="desktop-hidden"
+              href="article.html"
+            >
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/one.png"
+                  alt="OnePlus USB-C earbuds"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    OnePlus announces super cheap USB-C earbuds
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="main-content__left-side-row align-left">
+            <a
+              class="main-content__left-side-row__link"
+              id="mobile-hidden"
+              href="article.html"
+            >
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/one.png"
+                  alt="OnePlus USB-C earbuds"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    OnePlus announces super cheap USB-C earbuds
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="main-content__left-side-row__link" href="article.html">
+              <figure>
+                <img
+                  class="main-content__big-pic"
+                  src="./img/phone.png"
+                  alt="Spotify raises limit"
+                />
+                <figcaption>
+                  <p class="main-content__big-pic__description">
+                    Spotify raises limit for offline downloads to 10,000 songs
+                    per device
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="main-content__right-side">
+          <a
+            class="main-content__right-side__link"
+            href="https://codefactory.wien/en/home-en/"
+            target="_blank"
+          >
+            <img src="./img/banner-4.png" alt="FSWD Banner" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <nav class="main-foooter-nav">
+        <ul class="main-foooter-nav__items">
+          <li class="main-foooter-nav__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="tech.html">Tech</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="culture.html">Culture</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="video.html">Video</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-footer-logo">
+        <a href="index.html">
+          <img
+            src="./img/logo-newspaper-cf.png"
+            alt="newspaper CF - Your favorite news portal"
+          />
+        </a>
+      </div>
+      <div class="main-footer-credits">
+        <p>Balint Bakos - CodeFactory 2020</p>
+      </div>
+    </footer>
+  </body>
 </html>

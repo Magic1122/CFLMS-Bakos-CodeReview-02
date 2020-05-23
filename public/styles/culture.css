@@ -69,7 +69,7 @@ main {
     margin: 0 0 0 1.4rem; }
 
   .main-header img {
-    display: inline-block; }
+    display: block; }
 
   .main-header__banner {
     display: none; }
@@ -99,15 +99,6 @@ main {
 .article__info {
   text-align: right;
   padding: 0.9rem; }
-
-#article-1 {
-  margin-top: 1.4rem; }
-
-#article-2.article {
-  text-align: right; }
-
-#article-2 .article__info {
-  text-align: left; }
 
 .article__name {
   margin: 0.2rem;
@@ -147,4 +138,4 @@ main {
     vertical-align: middle;
     width: 30%; } }
 
-/*# sourceMappingURL=article.css.map */
+/*# sourceMappingURL=culture.css.map */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/video.css" />
+    <title>CodeReview 2</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div>
+        <a href="index.html" class="main-header__logo">
+          <img
+            src="./img/logo-newspaper-cf.png"
+            alt="newspaper CF - Your favorite news portal"
+          />
+        </a>
+      </div>
+      <div class="main-header__banner">
+        <a
+          href="https://codefactory.wien/en/home-en/"
+          target="_blank"
+          class="main-header__logo"
+        >
+          <img
+            src="./img/banner-1.png"
+            alt="CodeFactory FSWD course - The best course in Vienna"
+          />
+        </a>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="tech.html">Tech</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="culture.html">Culture</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="video.html">Video</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="time">
+        <p>Friday, 14.09.2018</p>
+      </div>
+      <main class="signup-page">
+        <h1 class="signup-title">
+          Please sign up if you want to see our videos!
+        </h1>
+        <form action="index.html" class="signup-form">
+          <label for="title">Title</label>
+          <select id="title">
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+          </select>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" required />
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" required />
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+          <input type="checkbox" id="agree-terms" required />
+          <label for="agree-terms"
+            >Agree to
+            <a href="#">Terms &amp; Conditions</a>
+          </label>
+          <button type="submit" class="button">Sign Up</button>
+        </form>
+      </main>
+    </main>
+    <footer class="main-footer">
+      <nav class="main-foooter-nav">
+        <ul class="main-foooter-nav__items">
+          <li class="main-foooter-nav__item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="tech.html">Tech</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="culture.html">Culture</a>
+          </li>
+          <li class="main-foooter-nav__item">
+            <a href="video.html">Video</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-footer-logo">
+        <img
+          src="./img/logo-newspaper-cf.png"
+          alt="newspaper CF - Your favorite news portal"
+        />
+      </div>
+      <div class="main-footer-credits">
+        <p>Balint Bakos - CodeFactory 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

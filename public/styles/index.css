@@ -69,7 +69,7 @@ main {
     margin: 0 0 0 1.4rem; }
 
   .main-header img {
-    display: block; }
+    display: inline-block; }
 
   .main-header__banner {
     display: none; }
@@ -210,13 +210,10 @@ main {
     display: none; }
 
   .align-left {
-    text-align: left;
-    margin-left: 0.9rem; }
+    text-align: left; }
+    .align-left a {
+      margin-left: 1.1rem; }
 
-  /* .main-content__second {
-    display: flex;
-    flex-direction: column-reverse;
-  } */
   #popular,
   .top-news-container,
   .main-content__left-side-row__popular {

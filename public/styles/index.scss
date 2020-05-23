@@ -175,13 +175,11 @@
 
   .align-left {
     text-align: left;
-    margin-left: 0.9rem;
-  }
 
-  /* .main-content__second {
-    display: flex;
-    flex-direction: column-reverse;
-  } */
+    a {
+      margin-left: 1.1rem;
+    }
+  }
 
   #popular,
   .top-news-container {
@@ -196,3 +194,4 @@
     font-weight: bold;
   }
 }
+
