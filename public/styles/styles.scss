@@ -119,6 +119,7 @@ main {
     position: relative;
     margin: $s-size $m-size $s-size 0;
     width: 100%;
+
   }
 }
 
@@ -127,10 +128,15 @@ main {
   /* object-fit: fill; */
 }
 
+.main-content__big-pic {
+  @extend .main-content__small-pic;
+  width: 100%;
+}
+
 .main-content__small-pic__description {
   position: absolute;
   color: $white;
-  font-size: $font-size-large;
+  font-size: 1vw;
   background-color: rgba($color: $black, $alpha: 0.99);
   margin: 0;
   width: 100%;
@@ -138,6 +144,11 @@ main {
   bottom: 0.7rem;
   height: 25%;
   left: 0;
+}
+
+.main-content__big-pic__description {
+  @extend .main-content__small-pic__description;
+  font-size: 2vw;
 }
 
 .main-content__left-side-row__popular {
@@ -168,4 +179,33 @@ main {
     img {
         width: 50%;
     }
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+}
+
+.main-foooter-nav__items {
+  @extend .main-nav__items;
+}
+
+.main-foooter-nav__item {
+  @extend .main-nav__item;
+}
+
+.main-footer-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin: $s-size;
+}
+
+.main-footer-credits {
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: $white;
+  }
 }
